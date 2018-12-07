@@ -1,0 +1,314 @@
+@import "app/sass/fonts"
+
+$lightGrey: #f6f7fb
+$lightGreyText: #a8acbb
+$darkGreyText: #9eacbb
+$blueBtn: #008bff
+$border: #dee5f0
+
+body
+	position: relative
+
+a, p
+	font-size: 14px
+	font-family: 'Bold', sans-serif
+	margin: 0
+
+	&:hover
+		outline: none
+		text-decoration: none
+
+ul
+	padding-left: 0
+	
+	li 
+		list-style: none
+		font-size: 14px
+		font-family: 'Regular', sans-serif
+		color: $lightGreyText
+		
+		margin-bottom: 10px
+
+		&:last-child
+			margin-bottom: 0
+
+		a
+			color: $lightGreyText
+			font-family: 'Regular', sans-serif
+
+			&:hover
+				color: inherit
+
+.pl0
+	padding-left: 0
+
+h1,h2,h3,h4,h5,h6
+	font-family: 'Bold', sans-serif
+	margin: 0
+	padding: 0
+
+h1
+	font-size: 46px
+
+h3
+	font-size: 30px
+
+h4
+	font-size: 20px
+
+h5
+	font-size: 18px
+
+a
+	&.blueBtn
+		color: white
+		background: $blueBtn
+		border-radius: 25px
+		padding: 5px 15px
+
+		&.blueBtnShadow
+			box-shadow: 0px 5px 10px -3px rgba(0,139,255, .5)
+
+.mainHeaderRow
+	display: flex
+	flex-direction: row
+	justify-content: space-between
+	width: 100%
+	align-items: center
+	height: 90px
+
+	.mainHeaderLogo
+		width: 140px
+
+		img
+			width: 100%
+
+	.mainHeaderMenu
+		display: flex
+		justify-content: space-between
+		align-items: center
+
+		a
+			color: $blueBtn
+
+		.mainHeaderHamburher
+
+			img
+				width: 20px
+
+		.mainHeaderTry
+			color: white
+			margin: 0 20px 0 10px
+
+		.mainHeaderSignIn
+			font-family: 'Regular', sans-serif
+
+#mainViewHomepage
+	padding: 175px 0 145px 0
+	background: $lightGrey
+	position: relative
+
+	.col-md-6
+		padding-left: 0
+
+	&:after
+		content: url('../img/top.png')
+		position: absolute
+		top: 0
+		right: 0
+		width: 50%
+		overflow: hidden
+
+	.mainViewHomepageDesc
+
+		h1
+			color: $lightGreyText
+			margin-bottom: 50px
+			margin-top: 30px
+
+		a
+			font-size: 18px
+
+footer
+	margin-bottom: 150px
+	
+	.footerReadyFor
+		background: $lightGrey
+		margin-bottom: 100px
+
+		.footerReadyForWrap
+			width: 100%
+			height: 230px
+			display: flex
+			flex-direction: row
+			justify-content: space-between
+			align-items: center
+
+			.footerReadyForWrapText
+				padding-left: 0
+
+				h5
+					color: $lightGreyText
+					font-family: 'Regular', sans-serif
+
+			.footerReadyForWrapBtn
+
+				a
+					font-size: 18px
+
+	.footerNav
+
+		.footerNavWrap
+			display: flex
+			justify-content: space-between
+			padding-bottom: 80px
+			border-bottom: 1px solid $border
+
+			.footerNavText
+				padding-left: 0
+
+				p
+					color: $lightGreyText
+					font-family: 'Regular', sans-serif
+					line-height: 30px
+					margin-top: 30px
+
+			.footerNavMenu
+				display: flex
+				justify-content: space-between
+				padding-right: 0
+
+				.footerNavMenuList
+
+					ul
+						margin-top: 30px
+
+					&.footerNavMenuContact
+
+						ul
+
+							li 
+
+								&:last-child
+
+									a
+										color: $blueBtn
+
+	.footerCopyright
+		margin-top: 40px
+
+		.footerCopyrightWrap
+			width: 100%
+			display: flex
+			justify-content: space-between
+
+			.footerCopyrightInfo
+
+				h4
+					margin-bottom: 20px
+
+					img
+						width: 20px
+						margin-top: -5px
+
+				a
+					position: relative
+					padding-left: 30px
+					font-family: 'Regular', sans-serif
+					display: inline
+
+					&:before 
+						content: url('../img/world.png')
+						position: absolute
+						left: 0
+						top: 0px
+
+				p
+					font-family: 'Regular', sans-serif
+					display: inline
+
+			.footerCopyrightSocial
+
+				a
+					margin: 10px
+
+					&:last-child
+						margin-right: 0
+
+.mainMenuOverlay
+	width: 100%
+	height: 100%
+	position: absolute
+	background: white
+	z-index: 999
+	opacity: .9
+	display: none
+
+.mainMenuTop
+	background-image: url('../img/menu-back.png')
+	position: fixed
+	width: 100%
+	z-index: 99999
+	top: -1000px
+	opacity: 0
+	transition: all 0.5s cubic-bezier(0.89, 0.74, 0.04, 1);
+
+	.mainHeaderRow
+
+		.mainHeaderSignIn
+			color: white
+
+		.mainHeaderTry
+			background: white
+			color: $blueBtn
+
+	.mainMenuTopNav
+		padding-bottom: 140px
+		padding-top: 80px
+
+		li
+			margin-bottom: 0
+
+			a
+				font-size: 46px
+				font-family: 'Bold', sans-serif
+				color: white
+				opacity: .5
+				transition: all linear 0.2s;
+
+				&:hover
+					opacity: 1
+	
+	.mainHeaderHamburher
+
+		button
+			font-size: 0
+			overflow: visible
+			cursor: pointer
+			background: transparent
+			border: 0
+			display: block
+			outline: none
+			padding: 0
+			z-index: 1046
+			box-shadow: none
+			touch-action: manipulation
+			position: relative
+			width: 25px
+			height: 25px
+
+			&:before, &:after, &:before, &:after
+				content: ''
+				display: block
+				width: 22px
+				height: 2px
+				margin: 0 auto
+				background-color: white
+				position: absolute
+				z-index: 5
+
+			&:before
+				transform: rotate(45deg)
+
+			&:after
+				transform: rotate(-45deg)

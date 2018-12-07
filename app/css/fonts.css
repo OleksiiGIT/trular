@@ -1,0 +1,11 @@
+@font-face {
+  font-family: 'Bold';
+  src: url("../fonts/Lota Grotesque Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/Lota Grotesque Bold.woff") format("woff"), url("../fonts/Lota Grotesque Bold.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Regular';
+  src: url("../fonts/Lota Grotesque Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/Lota Grotesque Regular.woff") format("woff"), url("../fonts/Lota Grotesque Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
